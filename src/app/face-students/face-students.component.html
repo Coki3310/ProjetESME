@@ -1,0 +1,8 @@
+<h2>{{ faceStudent.title }}</h2>
+<p>Mis en ligne le {{ faceStudent.createdDate }}</p>
+<img [src]="faceStudent.imageUrl" [alt]="faceStudent.title">
+<p>{{ faceStudent.description }}</p>
+<p>
+    <button (click)="onSnap()">{{ textButton }}</button>
+    🤌 {{ faceStudent.snaps }}
+</p>
