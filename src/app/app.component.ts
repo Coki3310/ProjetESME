@@ -7,23 +7,39 @@ import { FaceStudent } from './models/face-students.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
- myFace!: FaceStudent;
- myOtherFace!: FaceStudent;
+  myFace!: FaceStudent;
+  myOtherFace1!: FaceStudent;
+  myOtherFace2!: FaceStudent;
+  myOtherFace3!: FaceStudent;
 
- ngOnInit() {
-  this.myFace = new FaceStudent(
-    'Archibald',
-    'Mon meilleur ami depuis tout petit !',
-    'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-    new Date(),
-    0
-  );
-  this.myOtherFace = new FaceStudent(
-    'Archibald',
-    'Mon meilleur ami depuis tout petit !',
-    'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-    new Date(),
-    0
-  );
- }
+  ngOnInit() {
+    this.myFace = new FaceStudent(
+      'Théophile Chêne',
+      'Chef de projet',
+      './assets/Images/inconnu.webp',
+      new Date(),
+      0
+    );
+    this.myOtherFace1 = new FaceStudent(
+      'Adrien Tirlemont',
+      'Expert en IA',
+      './assets/Images/inconnu.webp',
+      new Date(),
+      0
+    );
+    this.myOtherFace2 = new FaceStudent(
+      'Clément Cronier',
+      'Web designer',
+      './assets/Images/inconnu.webp',
+      new Date(),
+      0
+    );
+    this.myOtherFace3 = new FaceStudent(
+      'Autre',
+      'Utilisateur',
+      './assets/Images/inconnu.webp',
+      new Date(),
+      0
+    );
+  }
 }

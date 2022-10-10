@@ -12,15 +12,15 @@ export class FaceStudentsComponent implements OnInit {
   textButton!: string;
 
   ngOnInit() {
-    this.textButton ='Oh snap';
+    this.textButton ='Like';
   }
   onSnap() {
-    if (this.textButton == 'Oh snap') {
+    if (this.textButton == 'Like') {
       this.faceStudent.snaps++;
-      this.textButton = 'Oops, un snap'
+      this.textButton = 'Liked it'
     }
-    else if(this.textButton == 'Oops, un snap') {
-      this.textButton='Oh snap';
+    else if(this.textButton == 'Liked it') {
+      this.textButton='Like';
       this.faceStudent.snaps--;
     }
   }
